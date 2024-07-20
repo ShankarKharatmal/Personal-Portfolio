@@ -1,0 +1,1024 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins','sans-serif';
+
+}
+
+:root{
+    --bg-color:#1f242d;
+    --second-bg-color:#323946;
+    --text-color:#fff;
+    --main-color:#0ef;
+   
+}
+
+html{
+    font-size: 62.5%;
+    overflow: Auto; 
+}
+
+body{
+    background: var(--bg-color);
+    color:var(--text-color);
+  
+    
+   
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.header .sticky{
+    border-bottom: .1rem solid rgba(0,0,0,.2);
+}
+
+.logo{
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+.logo:hover{
+    color: #0ef;
+    text-shadow:1px 1px 1px aqua;
+
+}
+
+.navbar a{
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+.navbar a:hover,
+.navbar a.active{
+    color:var(--main-color);
+}
+
+#menu-icon{
+    font-size: 3.6rem;
+    color:var(--text-color);
+    display: none;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+/* .home-img img{
+    width: 30vw;
+    filter: drop-shadow(0.30rem 0.30rem 0.8rem #0ef);
+    pointer-events: none;
+    
+} */
+
+.home-content h3{
+ font-size: 3.2rem;
+ font-weight: 700;
+}
+.home-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+span{
+    color: var(--main-color);
+    background-image: linear-gradient(100deg, #0ef, #09f36a);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-content h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    /* background: -webkit-linear-gradient(#020d4c, #08ef6c);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  background-image: linear-gradient(100deg, #0ef, #09f36a);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-content p{
+    font-size: 1.7rem;
+}
+
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+.social-media :hover{
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1 rem var(--main-color)
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+.btn:hover{
+    box-shadow: none;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background: var(--second-bg-color);
+   
+}
+
+.about-img{
+    width: 50vw;  
+    pointer-events: none;
+    
+}
+.about-img img{
+    object-fit: cover;
+    border-radius: 50%;
+   /* border: #0ef solid 5px ; */
+   /* box-shadow:#0ef 0 0 3rem; */
+   
+}
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
+}
+.about-content h2{
+    text-align: left;
+    line-height: 1.2;
+}
+.about-content h3{
+    font-size: 2.6rem;
+}
+.about-content p{
+    font-size: 2rem;
+    margin: 2rem  0  3rem;
+    
+
+}
+
+
+
+.edu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background: var(--bg-color);
+   
+}
+
+
+
+
+
+
+
+
+.skill h2{
+    margin-bottom: 5rem;
+}
+.skill-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.skill-container .skill-box {
+    flex: 2  2  45rem;
+    background: var(--second-bg-color);
+    padding: 1.5rem 1rem 1.5rem;
+    border-radius: 3rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+    height: 30rem;
+}
+.skill-container .skill-box:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+.heading {
+    margin: 2rem 0 3rem;
+}
+
+.skill-box h3{
+    font-size: 2rem;
+}
+.skill-box p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem 0 1.5rem;
+}
+.Project{
+    background: var(--second-bg-color);
+}
+.Project h2{
+    margin-bottom:4rem;
+}
+ .projects-container {
+    display:flex;
+    gap: 8px;
+}
+
+/*.project {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    background-image: url(mypic.JPG);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    transition: opacity 0.3s;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.project:hover .overlay {
+    opacity: 1;
+} */
+
+.card1{
+    width: 250px;
+    height: 350px;
+    background-image:  url("./rb.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    position:relative;
+    cursor: pointer;
+    border: 1px solid white;
+    transform-style: preserve-3d;
+   
+}
+
+.card1 h1{
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.hover-image-RB{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./RB.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.6s;
+}
+
+.card1:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("./rb.jpg");
+}
+
+.card1:hover .hover-image-RB{
+    top: 35%;
+    opacity: 1;
+}
+
+.card1:hover h1{
+    font-size: 30px;
+    text-shadow: 0px 0px 1px white,
+                 0px 0px 30px white;
+}
+
+
+
+.card2{
+    width: 250px;
+    height: 350px;
+    background-image: url("./mp.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid white;
+    
+}
+
+.card2 h1{
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.hover-image-MP{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./mp.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.6s;
+}
+
+.card2:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("./mp.jpg");
+}
+
+.card2:hover .hover-image-MP{
+    top: 35%;
+    opacity: 1;
+}
+
+.card2:hover h1{
+    font-size: 30px;
+    text-shadow: 0px 0px 1px white,
+                 0px 0px 30px white;
+}
+
+
+
+.card3{
+    width: 250px;
+    height: 350px;
+    background-image: url("./cb.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid white;
+    
+}
+
+.card3 h1{
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.hover-image-CB{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./bot.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.6s;
+}
+
+.card3:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("./cb.png");
+}
+
+.card3:hover .hover-image-CB{
+    top: 35%;
+    opacity: 1;
+}
+
+.card3:hover h1{
+    font-size: 30px;
+    text-shadow: 0px 0px 1px white,
+                 0px 0px 30px white;
+}
+
+
+.card4{
+    width: 250px;
+    height: 350px;
+    background-image: url("./BG.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid white;
+    
+}
+
+.card4 h1{
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.hover-image-BG{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./code.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.6s;
+}
+
+.card4:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("./BG.png");
+}
+
+.card4:hover .hover-image-BG{
+    top: 35%;
+    opacity: 1;
+}
+
+.card4:hover h1{
+    font-size: 30px;
+    text-shadow: 0px 0px 1px white,
+                 0px 0px 30px white;
+}
+
+.card5{
+    width: 250px;
+    height: 350px;
+    background-image: url("./net.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid white;
+    
+}
+
+.card5 h1{
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.hover-image-AS{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./net.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.6s;
+}
+
+.card5:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("./net.jpg");
+}
+
+.card5:hover .hover-image-AS{
+    top: 35%;
+    opacity: 1;
+}
+
+.card5:hover h1{
+    font-size: 30px;
+    text-shadow: 0px 0px 1px white,
+                 0px 0px 30px white;
+}
+
+
+
+
+
+
+
+
+
+.card6{
+    width: 250px;
+    height: 350px;
+    background-image:  url("./is.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    position:relative;
+    cursor: pointer;
+    border: 1px solid white;
+    transform-style: preserve-3d;
+   
+}
+
+.card6 h1{
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.hover-image-IS{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./model.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.6s;
+}
+
+.card6:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("./is.jpg");
+}
+
+.card6:hover .hover-image-IS{
+    top: 35%;
+    opacity: 1;
+}
+
+.card6:hover h1{
+    font-size: 30px;
+    text-shadow: 0px 0px 1px white,
+                 0px 0px 30px white;
+}
+
+
+
+.card7{
+    width: 250px;
+    height: 350px;
+    background-image: url("./ad.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid white;
+    
+}
+
+.card7 h1{
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.hover-image-AD{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./ad.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.6s;
+}
+
+.card7:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("./ad.jpg");
+}
+
+.card7:hover .hover-image-AD{
+    top: 35%;
+    opacity: 1;
+}
+
+.card7:hover h1{
+    font-size: 30px;
+    text-shadow: 0px 0px 1px white,
+                 0px 0px 30px white;
+}
+
+
+
+.card8{
+    width: 250px;
+    height: 350px;
+    background-image: url("./sa.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid white;
+    
+}
+
+.card8 h1{
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.hover-image-SA{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./sa.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.6s;
+}
+
+.card8:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("./sa.jpg");
+}
+
+.card8:hover .hover-image-SA{
+    top: 35%;
+    opacity: 1;
+}
+
+.card8:hover h1{
+    font-size: 30px;
+    text-shadow: 0px 0px 1px white,
+                 0px 0px 30px white;
+}
+
+
+.card9{
+    width: 250px;
+    height: 350px;
+    background-image: url("./sc.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid white;
+    
+}
+
+.card9 h1{
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.hover-image-SC{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./sc.webp');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.6s;
+}
+
+.card9:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("./sc.jpg");
+}
+
+.card9:hover .hover-image-SC{
+    top: 35%;
+    opacity: 1;
+}
+
+.card9:hover h1{
+    font-size: 30px;
+    text-shadow: 0px 0px 1px white,
+                 0px 0px 30px white;
+}
+
+.card10{
+    width: 250px;
+    height: 350px;
+    background-image: url("./wa.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid white;
+    
+}
+
+.card10 h1{
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.hover-image-WA{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./wa.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.6s;
+}
+
+.card10:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("./wa.jpg");
+}
+
+.card10:hover .hover-image-WA{
+    top: 35%;
+    opacity: 1;
+}
+
+.card10:hover h1{
+    font-size: 30px;
+    text-shadow: 0px 0px 1px white,
+                 0px 0px 30px white;
+}
+
+
+.Contact h2 {
+  margin-bottom: 3rem; 
+    
+    
+}
+
+.Contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.Contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Contact form .input-box input,
+.Contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size:1.6rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+.Contact form .input-box input {
+    width:49%;
+}
+
+.Contact form textarea {
+    resize:none;
+}
+.Contact form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+}
+
+.footer-text p{
+    font-size: 1.6rem;
+}
+
+.footer-iconTop a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.footer-iconTop a:hover {
+    box-shadow: 0 0 1rem  var(--main-color);
+}
+
+.footer-iconTop a i{
+    font-size: 2.4rem;
+    color: var(--second-bg-color);
+}
+
+
+/* BREAKPOINTS */
+@media (max-width: 952px){
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width: 1300px){
+    .header{
+       padding: 2rem 3%;
+    }
+    section {
+        padding: 10rem 3%  2ren ;
+    }
+    .skill{
+        padding-bottom: 7rem;
+    }
+    .Project{
+        padding-bottom: 7rem;
+    }
+    .Contact{
+        padding-bottom: auto;
+    }
+    .footer {
+        padding: 2rem  3%;
+    }
+}
+
+@media (max-width: 900px){
+    #menu-icon{
+        display:block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0,0,0,.2);
+        box-shadow: 0  .5rem  1rem rgba(0,0,0,.2);
+        display: none;
+    }
+    .navbar.active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .home{
+        flex-direction: column;
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+
+    }
+    .home-content h1{
+        font-size: 5rem;
+    }
+    .home-img img{
+        width: 70vw;
+        margin: top 4rem; 
+        pointer-events: none;
+    }
+    .about{
+        flex-direction: column-reverse;
+
+    }
+    .about-img{
+        width: 70vw;
+        margin-top: 4rem;
+        pointer-events: none;
+    }
+    .Skill h2{
+      margin-bottom: 3rem;
+    }
+    .Project h2{
+        margin-bottom: 3rem;
+
+    }
+    .Project-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+ 
